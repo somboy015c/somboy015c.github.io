@@ -827,13 +827,13 @@ img.emoji {
 		var sender_mail = document.getElementById("your-email").value;
 		var message = document.getElementById("your-message").value;
 		var subject = document.getElementById("your-subject").value;
-		var body = 'Sender Name: '+fullname+'<br/>'+'Sender Email Address: '+sender_mail+'<br/>'+'Subject: '+subject+'<br/>'+'Message: '+message;
+		var body = 'You have a new message Sender Name: '+fullname+'<br/>'+'Sender Email Address: '+sender_mail+'<br/>'+'Subject: '+subject+'<br/>'+'Message: '+message;
 		if (fullname != '' && sender_mail != '' && message != '' && subject != '') {
 			Email.send({
 			    SecureToken : "d20be723-a093-4efc-abc7-2958fcc1e545",
-			    To : 'mahmudshamsudeen@gmail.com',
-			    From : sender_mail,
-			    Subject : subject,
+			    To : 'mahmudshamsudeen01@gmail.com',
+			    From : 'mahmudshamsudeen@gmail.com',
+			    Subject : "Portfolio Contact Message",
 			    Body : body
 			}).then(
 			  message => alert(message)
